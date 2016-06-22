@@ -2,13 +2,13 @@
  * Created by huhaoshuang on 2016/6/21.
  */
 var bookStoreCtrls = angular.module('bookStoreCtrls',[]);
-bookStoreCtrls.controller('HelloCtrl',[$scope,function($scope){
+bookStoreCtrls.controller('HelloCtrl',['$scope',function($scope){
     $scope.greeting = {
         text:'Hello'
     };
     $scope.pageClass = 'Hello';
 }]);
-bookStoreCtrls.controller('BookListCtrl',[$scope,function($scope){
+bookStoreCtrls.controller('BookListCtrl',['$scope',function($scope){
     $scope.books=[{
         title:'《Ext江湖》',
         author:'大漠穷秋'
