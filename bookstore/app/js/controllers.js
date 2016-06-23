@@ -1,7 +1,7 @@
 /**
  * Created by huhaoshuang on 2016/6/21.
  */
-var bookStoreCtrls = angular.module('bookStoreCtrls',[]);
+var bookStoreCtrls = angular.module('bookStoreCtrls', []);
 bookStoreCtrls.controller('HelloCtrl',['$scope',function($scope){
     $scope.greeting = {
         text:'Hello'
