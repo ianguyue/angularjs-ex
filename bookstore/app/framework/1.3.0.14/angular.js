@@ -2085,7 +2085,8 @@ function publishExternalAPI(angular){
     'equals': equals,
     'element': jqLite,
     'forEach': forEach,
-    'injector': createInjector,
+    'injector':
+    ,
     'noop':noop,
     'bind':bind,
     'toJson': toJson,
@@ -8323,7 +8324,7 @@ function $HttpProvider() {
 
     return $http;
 
-
+                                                                                                                   
     function createShortMethods(names) {
       forEach(arguments, function(name) {
         $http[name] = function(url, config) {
